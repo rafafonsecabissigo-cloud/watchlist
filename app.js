@@ -102,4 +102,4 @@ document.addEventListener('keydown', e => {
 });
 
 fetch('data/movies.json').then(r => { if (!r.ok) throw 0; return r.json(); }).then(init)
-  .catch(() => { $('#lede').textContent = 'O arquivo de dados ainda não foi gerado. Rode: node scripts/build-data.mjs'; });
+  .catch(() => { $('#lede').textContent = 'O arquivo de dados ainda não foi gerado. Rode: node build-data.mjs'; });
